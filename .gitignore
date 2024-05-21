@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+__pycache__/
+backup_models/
+ISIC_2017_images/
+ISIC_2017_masks
+.git/
+ISIC_2017_images.zip
+ISIC_2017_masks.zip

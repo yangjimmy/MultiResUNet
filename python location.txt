@@ -1,0 +1,3 @@
+C:\Users\Computer\anaconda3\envs\multiuresnet5\python.exe
+
+C:\Users\Computer\anaconda3\envs\multiresunet5\python.exe
