@@ -17,6 +17,9 @@ from keras.models import Model, model_from_json
 import os
 import shutil
 import scipy.io
+from PIL import Image
+
+import pdb
 
 
 def load_json_model(model_name):
@@ -111,30 +114,55 @@ def run_test(img):
     return yp_test_disp
 
 
+# if __name__ == '__main__':
+#     initialize()
+#     root = "Z:\Jimmy Data\image-segmentation-keras\mia data\\bscans"
+#     out_dir = "out"
+#     files = os.listdir(root)
+#     fpath = os.path.join(root, files[200])
+#     fpath = ".\\VSCAN_0027_190.png"
+#     raw_file = np.asarray(Image.open(fpath).convert('L'))
+#     plt.show()
+#     out = run_test(raw_file)
+#     # for f in files:
+#     #     if f.split(".")[-1] != "png":
+#     #         continue
+#     #     fpath = os.path.join(root, f)
+#     #     raw_file = np.asarray(Image.open(fpath))
+#     #     out = run_test(raw_file)
+#     #     scipy.io.savemat(os.path.join(root,out_dir,f.split(".")[0]+".mat"), {'img': out})
+#     plt.figure()
+#     plt.imshow(out)
+#     plt.show()
+
 if __name__ == '__main__':
     initialize()
 
-    directory = "E:\\MSR2\\SAVES"
+    directory = "E:\\MSR2\\SAVES_V2"
     output_directory = os.path.join(directory,"segmented_mat")
     # if os.path.exists(output_directory):
     #     shutil.rmtree(output_directory)
     if not os.path.exists(output_directory):
         os.mkdir(os.path.join(directory,"segmented_mat"))
 
-
     for filename in tqdm(os.listdir(directory)):
         if filename.endswith(".raw"):
             full_filepath = os.path.join(directory, filename)
             full_mat_filepath = os.path.join(output_directory, os.path.splitext(filename)[0]+".mat")
-            if os.path.exists(full_mat_filepath):
-                continue
+            # if os.path.exists(full_mat_filepath):
+            #     continue
             with open(full_filepath, 'rb') as f:
                 raw_file = np.fromfile(f, dtype=np.float32) # add this 
                 # print(raw_file.shape)
+            pdb.set_trace()
             out = run_test(read_bscan(raw_file))
-            scipy.io.savemat(full_mat_filepath, {'img': out})
+            plt.imshow(out)
+            plt.show()
+            
+            # scipy.io.savemat(full_mat_filepath, {'img': out})
         else:
             continue
+        break
 
 # if __name__ == '__main__':
 #     img_seg = run_test()

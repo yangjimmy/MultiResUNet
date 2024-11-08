@@ -1,0 +1,64 @@
+batch size 30, jacard, 
+Epoch : 1
+Epoch 1/2
+40/40 [==============================] - ETA: 5s - loss: 0.6931 - jacard: 0.33 - 17s 431ms/step - loss: 0.6930 - jacard: 0.3334
+Epoch 2/2
+40/40 [==============================] - ETA: 0s - loss: 0.6922 - jacard: 0.33 - 0s 10ms/step - loss: 0.6921 - jacard: 0.3339
+10/10 [==============================] - 2s 170ms/step
+Jacard Index : 0.5
+Dice Coefficient : 0.6666666666666667
+***********************************************
+Jacard Index improved from -1.0 to 0.5
+***********************************************
+Epoch : 2
+Epoch 1/2
+40/40 [==============================] - ETA: 0s - loss: 0.6912 - jacard: 0.33 - 1s 13ms/step - loss: 0.6911 - jacard: 0.3343
+Epoch 2/2
+40/40 [==============================] - ETA: 0s - loss: 0.6903 - jacard: 0.33 - 0s 10ms/step - loss: 0.6902 - jacard: 0.3347
+10/10 [==============================] - 0s 3ms/step
+Jacard Index : 0.8924850692725386
+Dice Coefficient : 0.9355921136275954
+***********************************************
+Jacard Index improved from 0.5 to 0.8924850692725386
+***********************************************
+Epoch : 3
+Epoch 1/2
+40/40 [==============================] - ETA: 0s - loss: 0.6893 - jacard: 0.33 - 0s 10ms/step - loss: 0.6892 - jacard: 0.3351
+...
+40/40 [==============================] - ETA: 0s - loss: 0.6884 - jacard: 0.33 - 0s 11ms/step - loss: 0.6883 - jacard: 0.3356
+10/10 [==============================] - 0s 2ms/step
+Jacard Index : 0.8924850692725386
+Dice Coefficient : 0.935592113275954
+
+batch size 30, jacard + categorical accuracy
+
+Epoch : 1
+Epoch 1/2
+40/40 [==============================] - ETA: 47s - loss: 0.6931 - jacard: 0.3333 - categorical_accuracy: 0.02 - ETA: 16s - loss: 0.6929 - jacard: 0.3334 - categorical_accuracy: 0.50 - ETA: 5s - loss: 0.6927 - jacard: 0.3335 - categorical_accuracy: 0.6612 - 16s 411ms/step - loss: 0.6924 - jacard: 0.3337 - categorical_accuracy: 0.7401
+Epoch 2/2
+40/40 [==============================] - ETA: 0s - loss: 0.6912 - jacard: 0.3342 - categorical_accuracy: 0.976 - ETA: 0s - loss: 0.6910 - jacard: 0.3343 - categorical_accuracy: 0.976 - ETA: 0s - loss: 0.6908 - jacard: 0.3344 - categorical_accuracy: 0.976 - 1s 15ms/step - loss: 0.6905 - jacard: 0.3345 - categorical_accuracy: 0.9786
+10/10 [==============================] - 2s 178ms/step
+Jacard Index : 0.5
+Dice Coefficient : 0.6666666666666667
+***********************************************
+Jacard Index improved from -1.0 to 0.5
+***********************************************
+Epoch : 2
+Epoch 1/2
+40/40 [==============================] - ETA: 0s - loss: 0.6893 - jacard: 0.3350 - categorical_accuracy: 0.982 - ETA: 0s - loss: 0.6891 - jacard: 0.3351 - categorical_accuracy: 0.979 - ETA: 0s - loss: 0.6888 - jacard: 0.3353 - categorical_accuracy: 0.979 - 1s 18ms/step - loss: 0.6886 - jacard: 0.3354 - categorical_accuracy: 0.9786
+Epoch 2/2
+40/40 [==============================] - ETA: 0s - loss: 0.6874 - jacard: 0.3359 - categorical_accuracy: 0.979 - ETA: 0s - loss: 0.6872 - jacard: 0.3360 - categorical_accuracy: 0.979 - ETA: 0s - loss: 0.6869 - jacard: 0.3361 - categorical_accuracy: 0.979 - 1s 13ms/step - loss: 0.6867 - jacard: 0.3362 - categorical_accuracy: 0.9786
+10/10 [==============================] - 0s 2ms/step
+Jacard Index : 0.8924850692725386
+Dice Coefficient : 0.9355921136275954
+***********************************************
+Jacard Index improved from 0.5 to 0.8924850692725386
+***********************************************
+Epoch : 3
+Epoch 1/2
+40/40 [==============================] - ETA: 0s - loss: 0.6855 - jacard: 0.3367 - categorical_accuracy: 0.978 - ETA: 0s - loss: 0.6853 - jacard: 0.3368 - categorical_accuracy: 0.977 - ETA: 0s - loss: 0.6851 - jacard: 0.3370 - categorical_accuracy: 0.978 - 1s 14ms/step - loss: 0.6848 - jacard: 0.3371 - categorical_accuracy: 0.9786
+...
+40/40 [==============================] - ETA: 0s - loss: 0.6836 - jacard: 0.3376 - categorical_accuracy: 0.980 - ETA: 0s - loss: 0.6834 - jacard: 0.3377 - categorical_accuracy: 0.978 - ETA: 0s - loss: 0.6832 - jacard: 0.3378 - categorical_accuracy: 0.977 - 1s 13ms/step - loss: 0.6829 - jacard: 0.3379 - categorical_accuracy: 0.9786
+10/10 [==============================] - 0s 3ms/step
+Jacard Index : 0.8924850692725386
+Dice Coefficient : 0.9355921136275954
